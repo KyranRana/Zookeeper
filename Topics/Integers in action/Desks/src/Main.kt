@@ -1,10 +1,8 @@
 fun main() {
-    var totalDesks = calculateNumberOfDesks(readLine()!!.toInt())
-    totalDesks += calculateNumberOfDesks(readLine()!!.toInt())
-    totalDesks += calculateNumberOfDesks(readLine()!!.toInt())
+    var totalDesks = numberOfDesks(readLine()!!.toInt())
+    totalDesks += numberOfDesks(readLine()!!.toInt())
+    totalDesks += numberOfDesks(readLine()!!.toInt())
     println(totalDesks)
 }
 
-fun calculateNumberOfDesks(students: Int): Int {
-    return students / 2 + students % 2
-}
+fun numberOfDesks(students: Int): Int = students / 2 + students % 2
